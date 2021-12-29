@@ -1,3 +1,103 @@
+@media (max-width: 1024px) {
+    header {
+        padding: 10px;
+    }
+  
+    .header__logo {
+        height: 20px;
+    }
+  
+    header a {
+        margin-right: 10px;
+    }
+  
+    .about {
+        flex-direction: column;
+        padding: 50px 10px;
+    }
+  
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+  
+    .about__image {
+        width: 280px;
+    }
+  
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+  
+    .form {
+        padding: 50px 10px;
+    }
+  
+    .form h1 {
+        font-size: 36px;
+       
+    }
+  
+    footer {
+        padding: 50px 10px;
+    }
+  
+    .footer__container {
+        flex-direction: column;
+    }
+ }
+
+ @media (max-width: 320px) {
+    header {
+        padding: 10px;
+    }
+  
+    .header__logo {
+        height: 20px;
+    }
+  
+    header a {
+        margin-right: 10px;
+    }
+  
+    .about {
+        flex-direction: column;
+        padding: 50px 10px;
+    }
+  
+    .about h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+  
+    .about__image {
+        width: 280px;
+    }
+  
+    .about__sun-image {
+        width: 75px;
+        height: 75px;
+    }
+  
+    .form {
+        padding: 50px 10px;
+    }
+  
+    .form h1 {
+        font-size: 36px;
+       
+    }
+  
+    footer {
+        padding: 50px 10px;
+    }
+  
+    .footer__container {
+        flex-direction: column;
+    }
+ }
+
 body{
     font-family: "Raleway",sans-serif;
     color: #213053;
@@ -10,6 +110,10 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff;
 }
 .header__logo{
     height: 30px;
@@ -71,7 +175,20 @@ button{
 .sun{
     width: 100px;
     height: 100px;
+    animation-name: rotation;
+    animation-timing-function: linear;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+
   }
+
+  @keyframes rotation {
+    0%  {transform:rotate(0)}
+    100%    {transform:rotate(360deg)}
+  }
+
+  
   .form__container{
       width: 550px;
   }
@@ -178,3 +295,22 @@ button{
     .footer__links a{
         margin-bottom: 15px;
     }
+
+ /*  .animate__fadeInLeft{
+        
+        animation-duration:2s;
+        animation-iteration-count: 1;
+    }
+     
+
+    
+    .animate__backInRight{
+        animation-duration: 10s;
+        animation-iteration-count: 1;
+    }
+*/
+    .animate__animated.animate__fadeInLeft {
+        --animate-duration: 3s;}
+    .animate__animated.animate__fadeInRight {
+        --animate-duration: 3s;}
+      
