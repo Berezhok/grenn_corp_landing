@@ -1,103 +1,89 @@
-@media (max-width: 1024px) {
-    header {
-        padding: 10px;
+
+ @media (max-width: 400px) {
+    header{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
-  
-    .header__logo {
-        height: 20px;
+    
+    .header__logo{
+        height: 10px;
     }
-  
-    header a {
-        margin-right: 10px;
+    .about{
+        display: flex;
+        flex-direction: column-reverse;
+        max-width: 400px;
     }
-  
-    .about {
-        flex-direction: column;
-        padding: 50px 10px;
+    .about__text h1{
+        font-size: 10px;
+        line-height: 30px;
+        margin-right:30px;
+        margin-left:30px;
+        
     }
-  
-    .about h1 {
-        font-size: 36px;
-        line-height: 40px;
+    .about__text h1{
+        max-width: 300px;
     }
-  
-    .about__image {
+    .about__img .panel{
         width: 280px;
     }
-  
-    .about__sun-image {
+    .about__img .sun{
         width: 75px;
         height: 75px;
     }
-  
-    .form {
-        padding: 50px 10px;
+    .about__text h1{
+        max-width: 300px;
     }
-  
-    .form h1 {
-        font-size: 36px;
-       
+    .form__container{
+        width: 400px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
-  
-    footer {
-        padding: 50px 10px;
+    .features{
+        padding: 50px 10px 50px 10px;
     }
-  
-    .footer__container {
+    .cards{
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .features__feedback{
+        display: flex;
         flex-direction: column;
     }
- }
-
- @media (max-width: 320px) {
-    header {
-        padding: 10px;
-    }
-  
-    .header__logo {
-        height: 20px;
-    }
-  
-    header a {
-        margin-right: 10px;
-    }
-  
-    .about {
-        flex-direction: column;
-        padding: 50px 10px;
-    }
-  
-    .about h1 {
+    .features__feedbackleft h2{
         font-size: 36px;
-        line-height: 40px;
     }
-  
-    .about__image {
-        width: 280px;
-    }
-  
-    .about__sun-image {
-        width: 75px;
-        height: 75px;
-    }
-  
-    .form {
-        padding: 50px 10px;
-    }
-  
-    .form h1 {
-        font-size: 36px;
-       
-    }
-  
-    footer {
-        padding: 50px 10px;
-    }
-  
-    .footer__container {
+    .features__box{
+        display: flex;
         flex-direction: column;
     }
- }
-
+    .features__box h3{
+        font-size: 36px;
+    }
+    .features__save-box{
+       margin-right: 0px;
+       margin-bottom: 30px;
+    }
+    .promo{
+        display: flex;
+        flex-direction: column-reverse;
+    
+        }
+    
+    .promo__image{
+        width: 100%;
+        height: 500px;
+    } 
+    .promo__right{
+        
+        padding: 50px 10px 50px 10px;
+    }  
+    .footer__container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+}
 body{
     font-family: "Raleway",sans-serif;
     color: #213053;
@@ -188,10 +174,150 @@ button{
     100%    {transform:rotate(360deg)}
   }
 
-  
+  .features {
+    background-color: #ffffff;
+    padding: 115px 60px 115px 60px;
+   
+  }
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+  }
+  .card{
+      padding: 35px 40px 25px 40px;
+      border: 1px solid #D9E4E6;
+      border-radius: 5px;
+
+  }
+  .card p{
+      font-size: 12px;
+      opacity: 0.8;
+      line-height: 22px;
+  }
+  .card__logo{
+      width: 100px;
+      height: 100px;
+      font-size: 32px;
+      font-weight: 700;
+      background-color: #eaeff9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+  }
+  .fa-solar-panel{
+      color: #ffb406;
+  }
+  .card__logo span{
+    color: #ad1714;
+  }
+  .fa-chart-line{
+    color: #22a030;
+  }
+  .features__border{
+      margin-top: 50px;
+      margin-bottom: 50px;
+      border: 1px solid #E6EAF4;
+  }
+  .features__feedback{
+      display: flex;
+      
+  }
+  .features__feedbackleft{
+      padding-right: 10px;
+
+  }
+  .features__feedbackleft h2{
+      font-size: 48px;
+  }
+  .features__feedbackleft p{
+    font-size: 18px;
+    line-height: 26px;
+    opacity: 0.7;
+  }
+  .features__box{
+      display: flex;
+      
+      
+      padding: 30px 40px 25px 40px;
+      color: white;
+      border-radius: 25px;
+  }
+  .features__box h3{
+    font-size: 48px;
+    margin-bottom: 20px;
+    padding-top: 0px;
+  }
+  .features__save-box{
+      background-color: #dc5e26;
+      padding: 30px 40px 25px 40px;
+      border-radius: 25px;
+      margin-right: 30px;
+      box-shadow: 0px 6px 0 rgb(221 95 38 / 20%);
+  }
+  .features__rate-box{
+      margin-top: 0px;
+    background-color: #1D263A;
+    padding: 30px 40px 25px 40px;
+    border-radius: 25px;
+    box-shadow: 0px 6px 0 rgb(29 38 58 / 20%);
+}
+    .stars{
+      color: #ff7039;
+    }
+    .promo__image{
+        background-image: url(img/promo.png);
+        background-size: cover;
+        background-position: center;
+        width: 50%;
+        flex-shrink: 0;
+    }
+    .promo{
+    display: flex;
+
+    }
+    .promo__right{
+        
+        width: 50%;
+        background-color: #dd5f26;
+        padding: 160px 60px 160px 60px;
+    }
+    .promo__right__text{
+        background-color: white;
+        padding: 30px 40px 30px 40px;
+        font-size: 20px;
+        line-height: 22px;
+        font-weight: 500;
+        border-radius: 25px;
+    }
+    .promo__right__text p{
+
+        opacity: 0.8;
+    }
+    .fa-circle{
+        color:#ec6b29;
+        font-size: 20px;
+        text-align: center;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+    .button_1{
+        background-color: #107b1c;
+        margin-top: 20px;
+        font-size: 18px;
+        padding: 15px 30px 15px 30px;
+        font-weight: 600;
+    }
+    .fa-chevron-right{
+        margin-left: 5px;
+        font-size: 15px;
+    }
+
   .form__container{
       width: 550px;
   }
+
   .form{
       background-color: #1D263A;
       color: white;
